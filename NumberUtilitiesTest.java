@@ -95,10 +95,10 @@ public class NumberUtilitiesTest {
         @Test
     public void testGetRangeWithFiveStep() {
         // : Given
-        String expected = "51015";
-        int start = 5;
-        int stop = 20;
-        int step = 5;
+        String expected = "102540557085";
+        int start = 10;
+        int stop = 100;
+        int step = 15;
 
         // : When
         String actual = NumberUtilities.getRange(start, stop, step);
@@ -111,9 +111,9 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbersStartAndEndAtEven() {
         // : Given
-        String expected = "4681012141618";
-        int start = 4;
-        int stop = 20;
+        String expected = "1618202224262830";
+        int start = 16;
+        int stop = 32;
 
         // : When
         String actual = NumberUtilities.getEvenNumbers(start, stop);
@@ -126,9 +126,9 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbersStartAndEndAtOdd() {
         // : Given
-        String expected = "68101214161820";
-        int start = 5;
-        int stop = 21;
+        String expected = "121416182022242628303234";
+        int start = 11;
+        int stop = 35;
 
         // : When
         String actual = NumberUtilities.getEvenNumbers(start, stop);
@@ -141,9 +141,9 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbersStartAndEndAtOdd() {
         // : Given
-        String expected = "5791113151719";
-        int start = 5;
-        int stop = 21;
+        String expected = "555759616365";
+        int start = 55;
+        int stop = 67;
 
         // : When
         String actual = NumberUtilities.getOddNumbers(start, stop);
@@ -154,9 +154,9 @@ public class NumberUtilitiesTest {
 
     public void testGetOddNumbersStartAndEndAtEven() {
         // : Given
-        String expected = "579111315";
-        int start = 4;
-        int stop = 16;
+        String expected = "31333537394143454749";
+        int start = 30;
+        int stop = 50;
 
         // : When
         String actual = NumberUtilities.getOddNumbers(start, stop);
@@ -169,9 +169,9 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetExponentiationNumbersForSquare() {
         // : Given
-        String expected = "4916253649";
-        int start = 2;
-        int stop = 7;
+        String expected = "1491625";
+        int start = 1;
+        int stop = 5;
         int exponent = 2;
 
         // : When
@@ -185,10 +185,10 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetExponentiationNumbersForCube() {
         // : Given
-        String expected = "182764";
-        int start = 1;
-        int stop = 4;
-        int exponent = 3;
+        String expected = "625129624014096656110000";
+        int start = 5;
+        int stop = 10;
+        int exponent = 4;
 
         // : When
         String actual = NumberUtilities.getExponentiations(start, stop, exponent);
